@@ -1,18 +1,21 @@
 #must have pytrends installed
 from pytrends.request import TrendReq
+import time
 
-pytrends = TrendReq(hl='en-US', tz=360)
 
-print("debug 1")
+while True:
+    pytrends = TrendReq(hl='en-US', tz=360)
 
-pytrends.build_payload(kw_list=['coinbase'], timeframe='now 1-H')
+    print("debug 1")
 
-print("debug 2")
+    pytrends.build_payload(kw_list=['coinbase'], timeframe='now 1-H')
 
-testdata = pytrends.interest_over_time()
+    print("debug 2")
 
-print("debug 3")
+    testdata = pytrends.interest_over_time()
 
-print(testdata)
+    print("debug 3")
 
-print("James is a bitch")
+    print(testdata)
+
+    time.sleep(3)
