@@ -18,7 +18,7 @@ while True:
 
     print(testTime)
 
-    testRegion = pytrends.interest_by_region(resolution='coinbase')
+    testRegion = pytrends.interest_by_region(resolution='CITY')
 
     print(testRegion)
 
