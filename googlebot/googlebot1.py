@@ -15,4 +15,4 @@ print("debug 3")
 
 print(testdata)
 
-print("Getty is a bitch")
+print("James is a bitch")
